@@ -15,6 +15,8 @@ def main():
     print(tank1.free_capacity)
     manager.pour_out_water(tank1, 7)
     print(tank1.current)
+    print(manager.operations)
 
-if __name__=='__main__':
+
+if __name__ == "__main__":
     main()

@@ -1,6 +1,7 @@
 import random
 from string import ascii_lowercase
 
+
 class NameGenerator:
     @classmethod
     def random_name(cls):

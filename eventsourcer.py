@@ -1,3 +1,2 @@
 class EventSourcer:
     pass
-
