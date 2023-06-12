@@ -1,4 +1,4 @@
-from namegenerator import NameGenerator
+from tools.namegenerator import NameGenerator
 
 
 class Tank:

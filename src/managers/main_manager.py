@@ -1,5 +1,5 @@
-from tank import Tank
-from operation import Operation
+from tanks.tank import Tank
+from operations.operation import Operation
 
 
 class Manager:

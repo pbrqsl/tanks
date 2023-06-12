@@ -1,6 +1,6 @@
-from tank import Tank, TankFinder
+from tanks.tank import Tank, TankFinder
 
-from manager import Manager
+from managers.main_manager import Manager
 
 
 def main():
