@@ -1,12 +1,17 @@
-class Operation:
-    def __init__(self, tank_ID: str, operation_name: str, volume: int, result: bool):
-        self.name = operation_name
-        self.volume = volume
-        self.result = result
-        self.tank_ID = tank_ID
+from dataclasses import dataclass
+from datetime import datetime
 
-    def __repr__(self):
-        return f"Operation({self.tank_ID}, {self.name}, {self.volume}, {self.result})"
+
+
+@dataclass
+class Operation:
+    tank_id: str
+    name: str
+    volume: int
+    result: bool
+    timestamp: datetime
+    
+
 
 
 class OperationAnalyzer:
