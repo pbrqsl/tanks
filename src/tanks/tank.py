@@ -8,7 +8,7 @@ class Tank:
         self.id = NameGenerator.random_name()
 
     def __repr__(self):
-        return f"Tank: {self.id}: {self.current}"
+        return f"<Tank: id={self.id} current={self.current}>"
 
     def pour_in_water(self, volume: int) -> bool:
         if self.free_capacity >= volume:
@@ -31,11 +31,10 @@ class Tank:
             return False
         return False
 
-                
-
     @property
-    def free_capacity(self):
+    def free_capacity(self) -> int:
         return self.capacity - self.current
 
-
-
+    @property
+    def water_level(self) -> float:
+        return self.current / self.capacity
